@@ -1,13 +1,140 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+body {
+  background: #f2f2f2;
+  height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    saseans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  padding: 30px;
+  background: linear-gradient(72deg, rgba(36,38,38,1) 35%, rgba(8,237,150,1) 81%);
+  color: white;
+  
+}
+.navBrand{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  width: 100vw;
+}
+.inputSearch{
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+/* .btnBuscar{
+  padding: 5px;
+  width: 80px;
+  border-radius: 5px;
+  background: rgb(36,38,38);
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(8,237,150,1);
+} */
+.btnBuscar:hover{
+  background: radial-gradient(circle, rgba(36,38,38,1) 35%, rgba(8,237,150,0.9192051820728291) 81%);
+  border: 1px solid rgba(36,38,38,1);
+}
+.form{
+  margin-top: 40px;
+  border: 1px solid rgba(8,237,150,1);
+  width: 80%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  margin-left: 10%;
+  margin-bottom: 40px;
+}
+.form:hover{
+  box-shadow: 15px 10px 20px 10px rgba(36,38,38,0.273);
+  transition: all 0,7s linear;
+}
+.label{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 5%;  
+}
+.form-control{
+  width: 90%;
+  padding: 10px;
+  margin-left: 5%;
+  border: 1px solid rgba(8,237,150,1);
+}
+.btnAgregar{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 5%;
+  width: 200px;
+  padding: 7px;
+  border: 1px solid rgba(8,237,150,1);
+  border-radius: 5px;
+  background: rgb(36,38,38);
+  color: white;
+  font-weight: bold;
+}
+.btnAgregar:hover{
+  background: radial-gradient(circle, rgba(36,38,38,1) 35%, rgba(8,237,150,0.9192051820728291) 81%);
+}
+.list-group{
+  width: 80%;
+  padding: 5px;
+  border: 1px solid rgba(8,237,150,1);
+  margin-bottom: 25px;
+  margin-left: 10%;
+}
+.list-group:hover{
+  box-shadow: 15px 10px 20px 10px rgba(36,38,38,0.273);
+  transition: all 0,7s linear;
+}
+.btn-eliminar{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(8,237,150,1);
+  background: rgb(36,38,38);
+  color: white;
+}
+.btn-eliminar:hover{
+  background: red;
+  color: white;
+}
+.btn-editar{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(8,237,150,1);
+  background: rgb(36,38,38);
+  color: white;
+}
+.btn-editar:hover{
+  background: darkgoldenrod;
+  color: white;
+  
+}
+.footer{
+  padding: 30px;
+  background: linear-gradient(72deg, rgba(36,38,38,1) 35%, rgba(8,237,150,1) 81%);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
 }
